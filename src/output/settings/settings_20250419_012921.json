@@ -1,0 +1,145 @@
+{
+    "timestamp": "20250419_012921",
+    "sanitization_features": {
+        "strip_apostroph": true,
+        "replace_amp": true,
+        "replace_degree_sign": true,
+        "replace_incorrect_apostroph": true,
+        "swap_name_with_extra_info": true,
+        "remove_corrupted_unicode": true,
+        "remove_track_numbers": true,
+        "remove_artist_name_in_tracks": true,
+        "remove_time_in_tracks": true,
+        "replace_number_to_apostrophe": true
+    },
+    "merge_features": {
+        "skip_unknown_track_titles": {
+            "value": true,
+            "data": [
+                "Onbekend\\s+\\(Onbekend\\)",
+                "Skladba\\s+\\d{1}",
+                "Track\\d{2}"
+            ]
+        },
+        "remove_special_characters": {
+            "value": true,
+            "data": [
+                "!",
+                "@",
+                ",",
+                ".",
+                "(",
+                ")",
+                "[",
+                "]",
+                "{",
+                "}",
+                "\\",
+                "|",
+                "?",
+                "/",
+                "<",
+                ">",
+                "&",
+                "^",
+                "%",
+                "$",
+                "#",
+                "~",
+                "`",
+                "\"",
+                "'",
+                "+",
+                "=",
+                "-",
+                "_"
+            ]
+        },
+        "replace_numbers_with_letters": {
+            "value": true,
+            "data": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+            ]
+        },
+        "replace_Roman_with_letters": {
+            "value": true,
+            "data": [
+                "I",
+                "II",
+                "III",
+                "IV"
+            ]
+        },
+        "remove_all_spaces": {
+            "value": true,
+            "data": [
+                "\\s+"
+            ]
+        }
+    },
+    "matching_attributes": [
+        "dtitle"
+    ],
+    "similarity_modes": {
+        "levenshtein": {
+            "sim_function": "LevenshteinDistance",
+            "threshold": 0.75
+        },
+        "jaro-winkler": {
+            "sim_function": "JaroWinklerSimilarity",
+            "threshold": 0.8
+        },
+        "hamming": {
+            "sim_function": "HammingDistance",
+            "threshold": 0.75
+        },
+        "soundex": {
+            "sim_function": "SoundexSimilarity",
+            "threshold": 1.0
+        },
+        "s-levenshtein": {
+            "sim_function": "SoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "s-jaro-winkler": {
+            "sim_function": "SoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "s-hamming": {
+            "sim_function": "SoundexWithHamming",
+            "threshold": 0.75
+        },
+        "weaker-soundex": {
+            "sim_function": "WeakerSoundexSimilarity",
+            "threshold": 1.0
+        },
+        "ws-levenshtein": {
+            "sim_function": "WeakerSoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "ws-jaro-winkler": {
+            "sim_function": "WeakerSoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "ws-hamming": {
+            "sim_function": "WeakerSoundexWithHamming",
+            "threshold": 0.75
+        }
+    },
+    "process_times_seconds": {
+        "data_extraction": 0.04949050000141142,
+        "disk_matcher": 2.541555199997674,
+        "disk_evaluator": 0.03671810000378173,
+        "disk_merger": 6.111015199996473,
+        "total": 8.73877899999934
+    }
+}

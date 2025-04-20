@@ -1,0 +1,615 @@
+{
+    "timestamp": "20250419_161154",
+    "sanitization_features": {
+        "strip_apostroph": true,
+        "replace_amp": true,
+        "replace_degree_sign": true,
+        "replace_incorrect_apostroph": true,
+        "swap_name_with_extra_info": true,
+        "remove_corrupted_unicode": true,
+        "remove_track_numbers": true,
+        "remove_artist_name_in_tracks": true,
+        "remove_time_in_tracks": true,
+        "replace_number_to_apostrophe": true
+    },
+    "merge_features": {
+        "skip_unknown_track_titles": {
+            "value": true,
+            "data": [
+                "Onbekend\\s+\\(Onbekend\\)",
+                "Skladba\\s+\\d{1}",
+                "Track\\d{2}"
+            ]
+        },
+        "remove_special_characters": {
+            "value": true,
+            "data": [
+                "!",
+                "@",
+                ",",
+                "\\.",
+                "\\(",
+                "\\)",
+                "\\[",
+                "\\]",
+                "\\{",
+                "\\}",
+                "\\\\",
+                "\\|",
+                "\\?",
+                "/",
+                "<",
+                ">",
+                "&",
+                "\\^",
+                "%",
+                "\\$",
+                "#",
+                "~",
+                "`",
+                "\"",
+                "'",
+                "\\+",
+                "=",
+                "-",
+                "_",
+                "\\*"
+            ]
+        },
+        "replace_numbers_with_letters": {
+            "value": true,
+            "data": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e",
+                "f",
+                "g",
+                "h",
+                "i",
+                "j"
+            ]
+        },
+        "replace_Roman_with_letters": {
+            "value": true,
+            "data": [
+                [
+                    "I",
+                    "a"
+                ],
+                [
+                    "II",
+                    "b"
+                ],
+                [
+                    "III",
+                    "c"
+                ],
+                [
+                    "IV",
+                    "d"
+                ]
+            ]
+        },
+        "remove_all_spaces": {
+            "value": true,
+            "data": [
+                "\\s+"
+            ]
+        },
+        "replace_characters_with_base_form": {
+            "value": true,
+            "data": [
+                [
+                    "á",
+                    "a"
+                ],
+                [
+                    "à",
+                    "a"
+                ],
+                [
+                    "ä",
+                    "a"
+                ],
+                [
+                    "â",
+                    "a"
+                ],
+                [
+                    "ã",
+                    "a"
+                ],
+                [
+                    "å",
+                    "a"
+                ],
+                [
+                    "ā",
+                    "a"
+                ],
+                [
+                    "ă",
+                    "a"
+                ],
+                [
+                    "ą",
+                    "a"
+                ],
+                [
+                    "Á",
+                    "A"
+                ],
+                [
+                    "À",
+                    "A"
+                ],
+                [
+                    "Ä",
+                    "A"
+                ],
+                [
+                    "Â",
+                    "A"
+                ],
+                [
+                    "Ã",
+                    "A"
+                ],
+                [
+                    "Å",
+                    "A"
+                ],
+                [
+                    "Ā",
+                    "A"
+                ],
+                [
+                    "Ă",
+                    "A"
+                ],
+                [
+                    "Ą",
+                    "A"
+                ],
+                [
+                    "é",
+                    "e"
+                ],
+                [
+                    "è",
+                    "e"
+                ],
+                [
+                    "ë",
+                    "e"
+                ],
+                [
+                    "ê",
+                    "e"
+                ],
+                [
+                    "ē",
+                    "e"
+                ],
+                [
+                    "ė",
+                    "e"
+                ],
+                [
+                    "ę",
+                    "e"
+                ],
+                [
+                    "É",
+                    "E"
+                ],
+                [
+                    "È",
+                    "E"
+                ],
+                [
+                    "Ë",
+                    "E"
+                ],
+                [
+                    "Ê",
+                    "E"
+                ],
+                [
+                    "Ē",
+                    "E"
+                ],
+                [
+                    "Ė",
+                    "E"
+                ],
+                [
+                    "Ę",
+                    "E"
+                ],
+                [
+                    "í",
+                    "i"
+                ],
+                [
+                    "ì",
+                    "i"
+                ],
+                [
+                    "ï",
+                    "i"
+                ],
+                [
+                    "î",
+                    "i"
+                ],
+                [
+                    "ī",
+                    "i"
+                ],
+                [
+                    "į",
+                    "i"
+                ],
+                [
+                    "ı",
+                    "i"
+                ],
+                [
+                    "Í",
+                    "I"
+                ],
+                [
+                    "Ì",
+                    "I"
+                ],
+                [
+                    "Ï",
+                    "I"
+                ],
+                [
+                    "Î",
+                    "I"
+                ],
+                [
+                    "Ī",
+                    "I"
+                ],
+                [
+                    "Į",
+                    "I"
+                ],
+                [
+                    "ó",
+                    "o"
+                ],
+                [
+                    "ò",
+                    "o"
+                ],
+                [
+                    "ö",
+                    "o"
+                ],
+                [
+                    "ô",
+                    "o"
+                ],
+                [
+                    "õ",
+                    "o"
+                ],
+                [
+                    "ø",
+                    "o"
+                ],
+                [
+                    "ō",
+                    "o"
+                ],
+                [
+                    "Ó",
+                    "O"
+                ],
+                [
+                    "Ò",
+                    "O"
+                ],
+                [
+                    "Ö",
+                    "O"
+                ],
+                [
+                    "Ô",
+                    "O"
+                ],
+                [
+                    "Õ",
+                    "O"
+                ],
+                [
+                    "Ø",
+                    "O"
+                ],
+                [
+                    "Ō",
+                    "O"
+                ],
+                [
+                    "ú",
+                    "u"
+                ],
+                [
+                    "ù",
+                    "u"
+                ],
+                [
+                    "ü",
+                    "u"
+                ],
+                [
+                    "û",
+                    "u"
+                ],
+                [
+                    "ū",
+                    "u"
+                ],
+                [
+                    "ů",
+                    "u"
+                ],
+                [
+                    "Ú",
+                    "U"
+                ],
+                [
+                    "Ù",
+                    "U"
+                ],
+                [
+                    "Ü",
+                    "U"
+                ],
+                [
+                    "Û",
+                    "U"
+                ],
+                [
+                    "Ū",
+                    "U"
+                ],
+                [
+                    "Ů",
+                    "U"
+                ],
+                [
+                    "ñ",
+                    "n"
+                ],
+                [
+                    "ń",
+                    "n"
+                ],
+                [
+                    "ň",
+                    "n"
+                ],
+                [
+                    "Ñ",
+                    "N"
+                ],
+                [
+                    "Ń",
+                    "N"
+                ],
+                [
+                    "Ň",
+                    "N"
+                ],
+                [
+                    "ç",
+                    "c"
+                ],
+                [
+                    "č",
+                    "c"
+                ],
+                [
+                    "ć",
+                    "c"
+                ],
+                [
+                    "Ç",
+                    "C"
+                ],
+                [
+                    "Č",
+                    "C"
+                ],
+                [
+                    "Ć",
+                    "C"
+                ],
+                [
+                    "ž",
+                    "z"
+                ],
+                [
+                    "ź",
+                    "z"
+                ],
+                [
+                    "ż",
+                    "z"
+                ],
+                [
+                    "Ž",
+                    "Z"
+                ],
+                [
+                    "Ź",
+                    "Z"
+                ],
+                [
+                    "Ż",
+                    "Z"
+                ],
+                [
+                    "ś",
+                    "s"
+                ],
+                [
+                    "š",
+                    "s"
+                ],
+                [
+                    "ș",
+                    "s"
+                ],
+                [
+                    "Ś",
+                    "S"
+                ],
+                [
+                    "Š",
+                    "S"
+                ],
+                [
+                    "Ș",
+                    "S"
+                ],
+                [
+                    "ł",
+                    "l"
+                ],
+                [
+                    "ľ",
+                    "l"
+                ],
+                [
+                    "ĺ",
+                    "l"
+                ],
+                [
+                    "Ł",
+                    "L"
+                ],
+                [
+                    "Ľ",
+                    "L"
+                ],
+                [
+                    "Ĺ",
+                    "L"
+                ],
+                [
+                    "đ",
+                    "d"
+                ],
+                [
+                    "ð",
+                    "d"
+                ],
+                [
+                    "ď",
+                    "d"
+                ],
+                [
+                    "Đ",
+                    "D"
+                ],
+                [
+                    "Ð",
+                    "D"
+                ],
+                [
+                    "Ď",
+                    "D"
+                ],
+                [
+                    "þ",
+                    "th"
+                ],
+                [
+                    "Þ",
+                    "Th"
+                ],
+                [
+                    "œ",
+                    "oe"
+                ],
+                [
+                    "Œ",
+                    "OE"
+                ],
+                [
+                    "æ",
+                    "ae"
+                ],
+                [
+                    "Æ",
+                    "AE"
+                ]
+            ]
+        }
+    },
+    "matching_attributes": [
+        "dtitle"
+    ],
+    "similarity_modes": {
+        "levenshtein": {
+            "sim_function": "LevenshteinDistance",
+            "threshold": 0.75
+        },
+        "jaro-winkler": {
+            "sim_function": "JaroWinklerSimilarity",
+            "threshold": 0.8
+        },
+        "hamming": {
+            "sim_function": "HammingDistance",
+            "threshold": 0.75
+        },
+        "soundex": {
+            "sim_function": "SoundexSimilarity",
+            "threshold": 1.0
+        },
+        "s-levenshtein": {
+            "sim_function": "SoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "s-jaro-winkler": {
+            "sim_function": "SoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "s-hamming": {
+            "sim_function": "SoundexWithHamming",
+            "threshold": 0.75
+        },
+        "weaker-soundex": {
+            "sim_function": "WeakerSoundexSimilarity",
+            "threshold": 1.0
+        },
+        "ws-levenshtein": {
+            "sim_function": "WeakerSoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "ws-jaro-winkler": {
+            "sim_function": "WeakerSoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "ws-hamming": {
+            "sim_function": "WeakerSoundexWithHamming",
+            "threshold": 0.75
+        }
+    },
+    "process_times_seconds": {
+        "data_extraction": 0.04961689999618102,
+        "disk_matcher": 2.470375300006708,
+        "disk_evaluator": 0.02963419999286998,
+        "disk_merger": 5.287684299997636,
+        "total": 7.837310699993395
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "timestamp": "20250413_005853",
+    "sanitization_features": {
+        "strip_apostroph": true,
+        "replace_amp": true,
+        "replace_degree_sign": true,
+        "replace_incorrect_apostroph": true,
+        "swap_name_with_extra_info": true,
+        "remove_corrupted_unicode": true,
+        "remove_track_numbers": true,
+        "remove_artist_name_in_tracks": true,
+        "remove_time_in_tracks": true,
+        "replace_special_characters": false
+    },
+    "matching_attributes": [
+        "artist",
+        "dtitle"
+    ],
+    "similarity_modes": {
+        "levenshtein": {
+            "sim_function": "LevenshteinDistance",
+            "threshold": 0.75
+        },
+        "jaro-winkler": {
+            "sim_function": "JaroWinklerSimilarity",
+            "threshold": 0.8
+        },
+        "hamming": {
+            "sim_function": "HammingDistance",
+            "threshold": 0.75
+        },
+        "soundex": {
+            "sim_function": "SoundexSimilarity",
+            "threshold": 1.0
+        },
+        "s-levenshtein": {
+            "sim_function": "SoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "s-jaro-winkler": {
+            "sim_function": "SoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "s-hamming": {
+            "sim_function": "SoundexWithHamming",
+            "threshold": 0.75
+        },
+        "weaker-soundex": {
+            "sim_function": "WeakerSoundexSimilarity",
+            "threshold": 1.0
+        },
+        "ws-levenshtein": {
+            "sim_function": "WeakerSoundexWithLevenshtein",
+            "threshold": 0.75
+        },
+        "ws-jaro-winkler": {
+            "sim_function": "WeakerSoundexWithJaroWinkler",
+            "threshold": 0.8
+        },
+        "ws-hamming": {
+            "sim_function": "WeakerSoundexWithHamming",
+            "threshold": 0.75
+        }
+    },
+    "process_times_seconds": {
+        "data_extraction": 0.05575630000021192,
+        "disk_matcher": 5.051443399999698,
+        "disk_evaluator": 0.04657529999894905,
+        "disk_merger": 0.6144715000009455,
+        "total": 5.768246499999805
+    }
+}
