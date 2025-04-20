@@ -1,6 +1,11 @@
 # album-group-62
 
-## how to run the tool
+## About the project
+
+This is a replica of the project repository of group 62 for the course "Data Science (2024-202300200-2A)" at University of Twente.
+
+## How to run the tool
+
 ```cmd
 cd .\src\
 python3.12 -m venv env          (only once)
