@@ -1,0 +1,15 @@
+SEMI
+PYTHON-R
+*.csv
+*.xlsx
+*.xml
+env/*
+data
+*.pyc
+_*
+*.zip
+*.pdf
+*.jpg
+*.pptx
+*.json
+*.png
