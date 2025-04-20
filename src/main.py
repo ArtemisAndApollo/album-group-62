@@ -166,7 +166,7 @@ if __name__ == "__main__":
     cddb_entries_all = cddb_handler_all.get_entries()
 
     # Printing details. disk_id_length = 3 is ideal for cbbd_discs.xml
-    # pretty_print_disk_entries(entries=cddb_entries_all, max_entries=10, id_length=3, entry_name="Disk")
+    pretty_print_disk_entries(entries=cddb_entries_all, max_entries=10, id_length=3, entry_name="Disk")
 
     switch_time_data_extraction_to_disk_matcher = timer()
 
